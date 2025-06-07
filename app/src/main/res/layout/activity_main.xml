@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="8dp">
+        android:padding="10dp">
 
     <!-- Title and Icon -->
     <LinearLayout
@@ -33,7 +33,7 @@
             android:src="@drawable/ic_flight"
             android:tint="@android:color/white" />
 
-        <TextView
+        <net.skyscanner.backpack.text.BpkText
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,23 +45,21 @@
     </LinearLayout>
 
     <!-- Flight Number Card -->
-        <com.google.android.material.card.MaterialCardView
+        <net.skyscanner.backpack.card.BpkCardView
         android:id="@+id/flightCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
             android:backgroundTint="@android:color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="6dp">
 
-        <TextView
+                <net.skyscanner.backpack.text.BpkText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Flight: AI202"
@@ -70,26 +68,23 @@
             android:textStyle="bold"/>
 <!--            android:padding="16dp"-->
             </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </net.skyscanner.backpack.card.BpkCardView>
 
     <!-- Departure Card -->
-        <com.google.android.material.card.MaterialCardView
+        <net.skyscanner.backpack.card.BpkCardView
         android:id="@+id/departureCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
-            android:layout_marginTop="12dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white">
+            android:layout_marginTop="12dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="6dp">
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="Departure"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -97,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="BOM - Mumbai"
                 android:textSize="16sp"
                 android:paddingTop="4dp"
@@ -105,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="10:30 AM"
                 android:textSize="16sp"
                 android:textColor="#3A3A3A"
@@ -113,26 +108,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+        </net.skyscanner.backpack.card.BpkCardView>
 
     <!-- Arrival Card -->
-        <com.google.android.material.card.MaterialCardView
+        <net.skyscanner.backpack.card.BpkCardView
         android:id="@+id/arrivalCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-        android:layout_marginBottom="24dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white">
+        android:layout_marginBottom="24dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="6dp">
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="Arrival"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -140,7 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="DEL - Delhi"
                 android:textSize="16sp"
                 android:paddingTop="4dp"
@@ -148,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <TextView
+            <net.skyscanner.backpack.text.BpkText
                 android:text="12:50 PM"
                 android:textSize="16sp"
                 android:paddingTop="4dp"
@@ -156,21 +148,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-    <!-- CTA Button -->
-        <com.google.android.material.button.MaterialButton
-        android:id="@+id/searchFlightsButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Search Flights"
-        android:textColor="@android:color/white"
-            android:textAllCaps="false"
-        android:textStyle="bold"
-        android:backgroundTint="#3F51B5"
-            app:cornerRadius="12dp"
-            app:icon="@drawable/ic_flight"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp" />
+        </net.skyscanner.backpack.card.BpkCardView>
     </LinearLayout>
 </ScrollView>
